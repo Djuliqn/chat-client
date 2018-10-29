@@ -1,12 +1,12 @@
-package application;
+package com.chatty;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
 
 import java.net.URL;
@@ -17,12 +17,15 @@ public class ChattyApplication extends Application {
     private ConfigurableApplicationContext context;
     private Parent rootNode;
 
+
+    public static void main(String[] args) {
+        Application.launch(args);
+    }
+
     @Override
     public void init() throws Exception {
-        SpringApplicationBuilder builder = new SpringApplicationBuilder(ChattyApplication.class);
-        context = builder.run(getParameters().getRaw().toArray(new String[0]));
-
-        URL resource = getClass().getClassLoader().getResource("sample.fxml");
+        context = SpringApplication.run(ChattyApplication.class);
+        URL resource = getClass().getClassLoader().getResource("fxml/main.fxml");
         FXMLLoader loader = new FXMLLoader(resource);
         loader.setControllerFactory(context::getBean);
         rootNode = loader.load();
@@ -37,7 +40,7 @@ public class ChattyApplication extends Application {
     }
 
     @Override
-    public void stop() throws Exception {
+    public void stop(){
         context.close();
     }
 }
