@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="First connection">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="REAL FIRST CONNECTION">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/client.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chatty/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chatty/controller/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/chatty/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chatty/controller/MainController.class" afterDir="false" />
     </list>
@@ -71,34 +69,34 @@
         <counts>
           <entry key="class" value="6" />
           <entry key="fxml" value="1" />
-          <entry key="iml" value="1" />
+          <entry key="iml" value="2" />
           <entry key="java" value="9" />
           <entry key="properties" value="1" />
-          <entry key="xml" value="2" />
+          <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="6" />
-          <entry key="IDEA_MODULE" value="1" />
+          <entry key="IDEA_MODULE" value="2" />
           <entry key="JAVA" value="9" />
           <entry key="Properties" value="1" />
-          <entry key="XML" value="3" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="53" />
           <entry key="fxml" value="118" />
-          <entry key="java" value="1475" />
-          <entry key="txt" value="35" />
+          <entry key="java" value="1477" />
+          <entry key="txt" value="57" />
           <entry key="xml" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1475" />
-          <entry key="PLAIN_TEXT" value="88" />
+          <entry key="JAVA" value="1477" />
+          <entry key="PLAIN_TEXT" value="110" />
           <entry key="XML" value="145" />
         </counts>
       </usages-collector>
@@ -134,8 +132,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="215">
+              <caret line="18" column="15" lean-forward="true" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -484,7 +482,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541774910531</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="REAL FIRST CONNECTION">
+      <created>1542207755646</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1542207755646</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -502,12 +507,12 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3997833" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Problems" order="9" />
       <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="bottom" id="Profiler" order="11" />
@@ -531,7 +536,8 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <MESSAGE value="First connection" />
-    <option name="LAST_COMMIT_MESSAGE" value="First connection" />
+    <MESSAGE value="REAL FIRST CONNECTION" />
+    <option name="LAST_COMMIT_MESSAGE" value="REAL FIRST CONNECTION" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -556,7 +562,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/chatty/controller/MainController.java</url>
-          <line>49</line>
+          <line>44</line>
           <properties />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
@@ -603,13 +609,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controller.java" />
-    <entry file="file://$PROJECT_DIR$/client.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="86" selection-start-line="15" selection-start-column="86" selection-end-line="15" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.11.RELEASE/spring-context-4.3.11.RELEASE.jar!/org/springframework/context/ConfigurableApplicationContext.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -771,6 +770,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="44" lean-forward="true" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="86" selection-start-line="15" selection-start-column="86" selection-end-line="15" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="472">
@@ -780,8 +793,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="215">
+          <caret line="18" column="15" lean-forward="true" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
