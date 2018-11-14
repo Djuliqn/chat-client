@@ -1,19 +1,22 @@
 package com.chatty.controller;
 
-import com.chatty.util.ParameterStringBuilder;
 import de.felixroske.jfxsupport.FXMLController;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import org.apache.http.HttpEntity;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.http.message.BasicNameValuePair;
 
-import java.io.DataOutputStream;
 import java.io.IOException;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
 
-@FXMLController
+@FXMLControllerØ
 public class MainController {
 
     @FXML
@@ -26,27 +29,21 @@ public class MainController {
     private TextField password;
 
     @FXML
-    private void openSocketClicked(){
+    private void openSocketClicked() {
         login.setOnMouseClicked(event -> {
             try {
-                URL url = new URL("http://localhost:8080/spring-security-rest/login");
-                HttpURLConnection con = (HttpURLConnection) url.openConnection();
-                con.setRequestMethod("POST");
-                con.setRequestProperty("Content-Type", "application/json");
+                CloseableHttpClient httpclient = HttpClients.createDefault();
+                HttpPost httppost = new HttpPost("http://localhost:8080/user/login");
 
-                Map<String, String> parameters = new HashMap<>();
-                parameters.put("username", username.getText());
-                parameters.put("password", password.getText());
+                // Request parameters and other properties.
+                List<BasicNameValuePair> params = new ArrayList<>(2);
+                params.add(new BasicNameValuePair("username", "admin"));
+                params.add(new BasicNameValuePair("password", "admin"));
+                httppost.setEntity(new UrlEncodedFormEntity(params, "UTF-8"));
 
-                con.setDoOutput(true);
-                DataOutputStream out = new DataOutputStream(con.getOutputStream());
-                out.writeBytes(ParameterStringBuilder.getParamsString(parameters));
-                out.flush();
-                out.close();
-
-                con.connect();
-
-                System.out.println(con.getResponseCode());
+                //Execute and get the response.
+                CloseableHttpResponse response = httpclient.execute(httppost);
+                HttpEntity entity = response.getEntity();
 
             } catch (IOException e) {
                 e.printStackTrace();
@@ -54,4 +51,5 @@ public class MainController {
             System.out.print("Login " + username.getText() + " : " + password.getText());
         });
     }
+
 }
