@@ -5,10 +5,11 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="561.0" prefWidth="817.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chatty.controller.MainController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="367.0" prefWidth="416.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chatty.controller.MainController">
    <children>
-      <Button fx:id="login" layoutX="149.0" layoutY="197.0" mnemonicParsing="false" onAction="#openSocketClicked" text="Button" />
-      <TextField fx:id="username" layoutX="111.0" layoutY="58.0" />
-      <PasswordField fx:id="password" layoutX="111.0" layoutY="144.0" />
+      <Button fx:id="login" layoutX="149.0" layoutY="188.0" mnemonicParsing="false" onAction="#openSocketClicked" text="Login" />
+      <TextField fx:id="username" layoutX="149.0" layoutY="119.0" prefHeight="25.0" prefWidth="115.0" promptText="Username" />
+      <PasswordField fx:id="password" layoutX="149.0" layoutY="152.0" prefHeight="25.0" prefWidth="115.0" promptText="Password" />
+      <Button fx:id="register" layoutX="207.0" layoutY="188.0" mnemonicParsing="false" onAction="#registerClicked" text="Register" />
    </children>
 </Pane>
