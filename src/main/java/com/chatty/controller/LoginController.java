@@ -1,9 +1,11 @@
 package com.chatty.controller;
 
+import com.chatty.controller.socket.SockJsJavaClient;
+import com.chatty.model.MessageRecipient;
 import com.chatty.util.HTTPRequestExecutor;
 import com.chatty.util.HTTPResponseMessageExtractor;
+import com.chatty.view.MainChatView;
 import com.chatty.view.RegisterView;
-import com.chatty.view.dialog.RegisterDialog;
 import de.felixroske.jfxsupport.AbstractJavaFxApplicationSupport;
 import de.felixroske.jfxsupport.FXMLController;
 import javafx.fxml.FXML;
@@ -11,17 +13,28 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import org.apache.http.HttpEntity;
+import javafx.stage.Stage;
 import org.apache.http.client.methods.CloseableHttpResponse;
-import sun.misc.IOUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 
-import java.io.*;
-import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 
 @FXMLController
 public class LoginController {
+
+    @Value("${window.chat.width}")
+    private Integer chatViewWidth;
+
+    @Value("${window.chat.height}")
+    private Integer chatViewHeight;
+
+    @Autowired
+    private SockJsJavaClient sockJsJavaClient;
+
+    @Autowired
+    private UserSession userSession;
 
     @FXML
     private Button login;
@@ -49,10 +62,24 @@ public class LoginController {
             if(entity.getStatusLine().getStatusCode() != 200){
                 message.setText(HTTPResponseMessageExtractor.getResponseErrorMessage(entity));
             }else{
-                //TODO redirect to main view
+                showMainView();
             }
 
         });
+    }
+
+    private void init() {
+        sockJsJavaClient.connectClient();
+        sockJsJavaClient.subscribeClient();
+    }
+
+    private void showMainView() {
+        Stage stage = AbstractJavaFxApplicationSupport.getStage();
+        stage.setWidth(chatViewWidth);
+        stage.setHeight(chatViewHeight);
+        init();
+        userSession.setLoggedInUser(MessageRecipient.builder().recipientName(username.getText()).recipientType(MessageRecipient.RecipientType.USER).build());
+        AbstractJavaFxApplicationSupport.showView(MainChatView.class);
     }
 
     @FXML
