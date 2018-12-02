@@ -43,11 +43,6 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </GridPane.margin>
             </TextField>
-            <TextField fx:id="password" GridPane.columnIndex="1" GridPane.rowIndex="3">
-               <GridPane.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </GridPane.margin>
-            </TextField>
             <Button fx:id="login" mnemonicParsing="false" onAction="#loginBtnClicked" text="Login" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4">
                <padding>
                   <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
@@ -70,6 +65,11 @@
                </image>
             </ImageView>
             <Label fx:id="message" prefHeight="45.0" prefWidth="174.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <PasswordField fx:id="password" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </GridPane.margin>
+            </PasswordField>
          </children>
       </GridPane>
    </center>

@@ -41,7 +41,7 @@ public class RegisterDialog extends Dialog {
             return null;
         });
 
-        Optional<HttpEntity> result = this.showAndWait();
+        Optional<CloseableHttpResponse> result = this.showAndWait();
 
         result.ifPresent(httpEntity -> {
             System.out.println("Registered");

@@ -1,6 +1,7 @@
 package com.chatty.controller;
 
 import com.chatty.util.HTTPRequestExecutor;
+import com.chatty.util.HTTPResponseMessageExtractor;
 import com.chatty.view.RegisterView;
 import com.chatty.view.dialog.RegisterDialog;
 import de.felixroske.jfxsupport.AbstractJavaFxApplicationSupport;
@@ -8,6 +9,7 @@ import de.felixroske.jfxsupport.FXMLController;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -18,7 +20,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 
-
+@FXMLController
 public class LoginController {
 
     @FXML
@@ -28,7 +30,7 @@ public class LoginController {
     @FXML
     private TextField username;
     @FXML
-    private TextField password;
+    private PasswordField password;
     @FXML
     private Label message;
 
@@ -45,31 +47,12 @@ public class LoginController {
 
             CloseableHttpResponse entity = reqExecutor.executePost("/user/login", params);
             if(entity.getStatusLine().getStatusCode() != 200){
-                message.setText(getResponseErrorMessage(entity));
+                message.setText(HTTPResponseMessageExtractor.getResponseErrorMessage(entity));
             }else{
                 //TODO redirect to main view
             }
 
         });
-    }
-
-    private String getResponseErrorMessage(CloseableHttpResponse entity) {
-        try {
-            ByteArrayOutputStream buffer = new ByteArrayOutputStream();
-            int nRead;
-            byte[] data = new byte[1024];
-            while ((nRead = entity.getEntity().getContent().read(data, 0, data.length)) != -1) {
-                buffer.write(data, 0, nRead);
-            }
-
-            buffer.flush();
-            byte[] byteArray = buffer.toByteArray();
-
-            String text = new String(byteArray, StandardCharsets.UTF_8);
-            return  text;
-        } catch (IOException e) {
-            return "Error";
-        }
     }
 
     @FXML

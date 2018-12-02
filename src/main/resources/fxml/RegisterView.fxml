@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.chatty.controller.RegisterController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane maxWidth="350.0" minWidth="350.0" prefHeight="420.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chatty.controller.RegisterController">
+   <children>
+       <Text fill="#e4e4e4" layoutX="120.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Account" textAlignment="CENTER" wrappingWidth="110.99999809265137">
+           <font>
+               <Font name="System Bold" size="14.0" />
+           </font>
+       </Text>
+       <TextField fx:id="username" layoutX="61.0" layoutY="108.0" prefHeight="27.0" prefWidth="229.0" promptText="User name" />
+       <PasswordField fx:id="confirmPassword" layoutX="61.0" layoutY="204.0" prefHeight="27.0" prefWidth="229.0" promptText="Confirm Password" />
+       <Button fx:id="register" layoutX="89.0" layoutY="263.0" mnemonicParsing="false" onAction="#btnRegisterAction" prefHeight="27.0" prefWidth="173.0" text="Register" />
+      <PasswordField fx:id="password" layoutX="61.0" layoutY="159.0" prefHeight="25.0" prefWidth="229.0" promptText="Password" />
+      <Label fx:id="errorMessage" layoutX="24.0" layoutY="54.0" prefHeight="41.0" prefWidth="303.0" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="89.0" layoutY="302.0" mnemonicParsing="false" onAction="#btnBackAction" prefHeight="25.0" prefWidth="173.0" text="Back" />
+   </children>
 </AnchorPane>
