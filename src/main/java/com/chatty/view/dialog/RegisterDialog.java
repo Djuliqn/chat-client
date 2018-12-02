@@ -9,6 +9,7 @@ import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.stage.StageStyle;
 import org.apache.http.HttpEntity;
+import org.apache.http.client.methods.CloseableHttpResponse;
 
 import java.util.*;
 
@@ -34,7 +35,7 @@ public class RegisterDialog extends Dialog {
             if (dialogButton == register) {
                 Map<String, String> data = getParameterMap(Arrays.asList(username, password, rePassword));
                 HTTPRequestExecutor reqExecutor = new HTTPRequestExecutor("localhost", "8080");
-                HttpEntity entity = reqExecutor.executePost("/user/register", data);
+                CloseableHttpResponse entity = reqExecutor.executePost("/user/register", data);
                 return entity;
             }
             return null;

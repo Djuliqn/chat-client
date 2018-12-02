@@ -1,6 +1,6 @@
 package com.chatty;
 
-import com.chatty.view.MainView;
+import com.chatty.view.LoginView;
 import de.felixroske.jfxsupport.AbstractJavaFxApplicationSupport;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -8,6 +8,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ChattyApplication extends AbstractJavaFxApplicationSupport {
 
     public static void main(String[] args) {
-        launchApp(ChattyApplication.class, MainView.class, args);
+        launchApp(ChattyApplication.class, LoginView.class, args);
     }
 }

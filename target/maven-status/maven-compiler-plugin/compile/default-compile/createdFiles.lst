@@ -1,0 +1,7 @@
+com\chatty\view\exception\FieldValidationException.class
+com\chatty\controller\MainController.class
+com\chatty\util\ParameterStringBuilder.class
+com\chatty\view\MainView.class
+com\chatty\util\HTTPRequestExecutor.class
+com\chatty\ChattyApplication.class
+com\chatty\view\dialog\RegisterDialog.class

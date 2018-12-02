@@ -1,6 +1,5 @@
 package com.chatty.util;
 
-import org.apache.http.HttpEntity;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpPost;
@@ -21,7 +20,7 @@ public class HTTPRequestExecutor {
         this.baseUrl = "http://" + hostName + ":" + port;
     }
 
-    public HttpEntity executePost(String path,  Map<String, String> params){
+    public CloseableHttpResponse executePost(String path, Map<String, String> params){
         try {
             CloseableHttpClient httpClient = HttpClients.createDefault();
             HttpPost httppost = new HttpPost( baseUrl + path);
@@ -32,7 +31,7 @@ public class HTTPRequestExecutor {
 
             //Execute and get the response.
             CloseableHttpResponse response = httpClient.execute(httppost);
-            return response.getEntity();
+            return response;
 
         } catch (IOException e) {
             e.printStackTrace();
