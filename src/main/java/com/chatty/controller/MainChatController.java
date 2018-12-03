@@ -6,13 +6,13 @@ import de.felixroske.jfxsupport.FXMLController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
+import org.joda.time.LocalDate;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Lazy;
 
-import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
-import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
 
@@ -26,8 +26,8 @@ public class MainChatController {
     private SockJsJavaClient sockJsJavaClient;
 
     @FXML private Button btnSend;
-
     @FXML private TextField messageText;
+    @FXML private ScrollPane allMessagesPane;
 
 
     public void init() {
@@ -47,5 +47,6 @@ public class MainChatController {
     }
 
     public void addToList(String sender, LocalDate date, String text) {
+        allMessagesPane.setContent(new Text(text));
     }
 }

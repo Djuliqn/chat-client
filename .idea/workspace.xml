@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="REAL FIRST CONNECTION">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chatty/util/HTTPRequestExecutor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chatty/view/dialog/RegisterDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chatty/view/exception/FieldValidationException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chatty/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chatty/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/main.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chatty/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chatty/controller/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chatty/view/MainView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chatty/view/MainView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chatty/controller/MainChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chatty/controller/MainChatController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chatty/controller/socket/SockJsJavaClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chatty/controller/socket/SockJsJavaClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chatty/model/MessageView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chatty/model/MessageView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chatty/model/OutputMessageView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chatty/model/OutputMessageView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/MainChatView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/MainChatView.fxml" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,35 +80,35 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="14" />
+          <entry key="class" value="16" />
           <entry key="fxml" value="5" />
           <entry key="iml" value="2" />
-          <entry key="java" value="53" />
-          <entry key="properties" value="3" />
-          <entry key="xml" value="4" />
+          <entry key="java" value="64" />
+          <entry key="properties" value="4" />
+          <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="14" />
+          <entry key="CLASS" value="16" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="53" />
-          <entry key="Properties" value="3" />
-          <entry key="XML" value="9" />
+          <entry key="JAVA" value="64" />
+          <entry key="Properties" value="4" />
+          <entry key="XML" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="84" />
           <entry key="fxml" value="128" />
-          <entry key="java" value="4107" />
+          <entry key="java" value="4295" />
           <entry key="txt" value="57" />
           <entry key="xml" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4107" />
+          <entry key="JAVA" value="4295" />
           <entry key="PLAIN_TEXT" value="141" />
           <entry key="XML" value="155" />
         </counts>
@@ -165,74 +164,44 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/controller/LoginController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/controller/MainChatController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="71" selection-start-line="71" selection-end-line="71" />
+            <state relative-caret-position="302">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1522#1523#0" expanded="true" />
+                <element signature="e#1580#1581#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/controller/UserSession.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#270#271#0" expanded="true" />
-                <element signature="e#318#319#0" expanded="true" />
-                <element signature="e#367#368#0" expanded="true" />
-                <element signature="e#402#403#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="635">
+              <caret line="1774" column="56" lean-forward="true" selection-start-line="1774" selection-start-column="56" selection-end-line="1774" selection-end-column="56" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/de/roskenet/springboot-javafx-support/1.3.15/springboot-javafx-support-1.3.15-sources.jar!/de/felixroske/jfxsupport/AbstractJavaFxApplicationSupport.java">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/control/TextInputControl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1533">
-              <caret line="112" column="23" selection-start-line="112" selection-start-column="23" selection-end-line="112" selection-end-column="23" />
+            <state relative-caret-position="168">
+              <caret line="347" column="35" selection-start-line="347" selection-start-column="35" selection-end-line="347" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/controller/socket/SockJsJavaClient.java">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/control/TextField.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="148" column="1" lean-forward="true" selection-start-line="148" selection-start-column="1" selection-end-line="148" selection-end-column="1" />
+            <state relative-caret-position="176">
+              <caret line="105" selection-start-line="105" selection-end-line="105" />
               <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-websocket/5.0.10.RELEASE/spring-websocket-5.0.10.RELEASE.jar!/org/springframework/web/socket/client/standard/StandardWebSocketClient.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="47">
-              <caret line="41" column="36" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="36" />
-              <folding>
-                <element signature="e#2044#2045#0" expanded="true" />
-                <element signature="e#2127#2128#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/view/LoginView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="47" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#3264#3265#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -241,21 +210,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/model/MessageRecipient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="221">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/controller/MainChatController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/controller/socket/SockJsJavaClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+            <state relative-caret-position="384">
+              <caret line="102" selection-start-line="102" selection-end-line="102" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#342#343#0" expanded="true" />
-                <element signature="e#393#394#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/model/OutputMessageView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -273,14 +252,22 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/MainChatView.fxml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/5.0.10.RELEASE/spring-messaging-5.0.10.RELEASE.jar!/org/springframework/messaging/simp/stomp/DefaultStompSession.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="8" column="108" selection-start-line="8" selection-start-column="108" selection-end-line="8" selection-end-column="108" />
+            <state relative-caret-position="210">
+              <caret line="135" selection-start-line="135" selection-end-line="135" />
             </state>
           </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/model/MessageView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -303,6 +290,8 @@
       <find>HttpEntity</find>
       <find>.</find>
       <find>splashScreen</find>
+      <find>session</find>
+      <find>mainChatController</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -348,15 +337,16 @@
         <option value="$PROJECT_DIR$/src/main/java/com/chatty/controller/RegisterController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatty/util/HTTPRequestExecutor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatty/view/MainChatView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chatty/model/MessageView.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatty/model/MessageRecipient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chatty/controller/socket/SockJsJavaClient.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatty/controller/UserSession.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatty/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chatty/controller/MainChatController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/MainChatView.fxml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chatty/model/MessageView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chatty/model/OutputMessageView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chatty/controller/MainChatController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chatty/controller/socket/SockJsJavaClient.java" />
       </list>
     </option>
   </component>
@@ -384,11 +374,6 @@
           <item name="client" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="client" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
       </expand>
       <select />
     </treeState>
@@ -408,43 +393,43 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="chat-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chat-client" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="chat-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chat-client" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="chat-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chat-client" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="chat-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chat-client" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="chat-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chat-client" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="chatty" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="chat-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chat-client" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -452,8 +437,8 @@
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="chat-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chat-client" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -461,8 +446,8 @@
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="chat-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chat-client" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -470,8 +455,8 @@
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="chat-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chat-client" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -479,8 +464,8 @@
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="chat-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chat-client" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -489,25 +474,15 @@
               <item name="dialog" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="chat-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chat-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chatty" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chat-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chat-client" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="chat-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chat-client" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -517,7 +492,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -532,29 +507,29 @@
     <property name="dynamic.classpath" value="false" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../chat-server" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.18620689" />
     <property name="recentsLimit" value="5" />
-    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Стъч\IdeaProjects\chat-client\src\main\resources\images" />
+      <recent name="C:\Users\sstankov\IdeaProjects\chatty\client\src\main\resources" />
+      <recent name="C:\Users\sstankov\IdeaProjects\chatty\client\src\main\resources\fxml" />
+      <recent name="C:\Users\sstankov\IdeaProjects\chatty\client\src\main\java" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Стъч\IdeaProjects\chat-client\src\main\java\com\chatty\model" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.chatty.view" />
       <recent name="com.chatty.view.exception" />
       <recent name="com.chatty.util" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Стъч\IdeaProjects\chat-client\src\main\resources\images" />
-      <recent name="C:\Users\sstankov\IdeaProjects\chatty\client\src\main\resources" />
-      <recent name="C:\Users\sstankov\IdeaProjects\chatty\client\src\main\resources\fxml" />
-      <recent name="C:\Users\sstankov\IdeaProjects\chatty\client\src\main\java" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Стъч\IdeaProjects\chat-client\src\main\java\com\chatty\model" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -697,18 +672,18 @@
     <option name="totallyTimeSpent" value="1302000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.2193646" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.2153518" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="Learn" order="4" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32786885" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32719395" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32786885" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.4442623" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -718,7 +693,7 @@
       <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="bottom" id="Profiler" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" weight="0.32936078" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32786885" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32719395" />
       <window_info anchor="bottom" id="Terminal" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -726,7 +701,7 @@
       <window_info anchor="right" id="JetGradle" order="3" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="right" id="Maven Projects" order="6" sideWeight="0.49819493" visible="true" weight="0.13993949" />
+      <window_info anchor="right" id="Maven Projects" order="6" sideWeight="0.49819493" visible="true" weight="0.08155651" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Coverage" order="8" sideWeight="0.50180507" side_tool="true" visible="true" weight="0.08155651" />
     </layout>
@@ -782,9 +757,39 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/chatty/controller/MainChatController.java</url>
-          <line>44</line>
+          <line>49</line>
           <properties />
-          <option name="timeStamp" value="42" />
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/chatty/controller/socket/SockJsJavaClient.java</url>
+          <line>129</line>
+          <properties />
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/chatty/controller/socket/SockJsJavaClient.java</url>
+          <line>109</line>
+          <properties />
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/chatty/controller/socket/SockJsJavaClient.java</url>
+          <line>114</line>
+          <properties />
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/chatty/controller/socket/SockJsJavaClient.java</url>
+          <line>119</line>
+          <properties />
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/chatty/controller/socket/SockJsJavaClient.java</url>
+          <line>96</line>
+          <properties />
+          <option name="timeStamp" value="51" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -848,23 +853,15 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/awt/Component.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/awt/Label.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/embed/swing/SwingNode.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/Parent.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/layout/Region.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/control/Control.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/Node.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/control/TextInputControl.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/control/TextField.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/control/PasswordField.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/view/exception/FieldValidationException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="47" lean-forward="true" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
-          <folding>
-            <element signature="e#157#158#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -873,7 +870,13 @@
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar!/org/apache/http/HttpEntity.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/de/roskenet/springboot-javafx-support/1.3.15/springboot-javafx-support-1.3.15.jar!/de/felixroske/jfxsupport/SplashScreen.class" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/login.fxml" />
-    <entry file="jar://$MAVEN_REPOSITORY$/de/roskenet/springboot-javafx-support/1.3.15/springboot-javafx-support-1.3.15.jar!/de/felixroske/jfxsupport/AbstractJavaFxApplicationSupport.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/de/roskenet/springboot-javafx-support/1.3.15/springboot-javafx-support-1.3.15.jar!/de/felixroske/jfxsupport/AbstractJavaFxApplicationSupport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1462">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/LoginView.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -882,58 +885,12 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6-sources.jar!/org/apache/http/impl/client/CloseableHttpClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="105" column="33" selection-start-line="105" selection-start-column="33" selection-end-line="105" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10-sources.jar!/org/apache/http/HttpResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-702">
-          <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6-sources.jar!/org/apache/http/client/methods/CloseableHttpResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="38" column="53" lean-forward="true" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10-sources.jar!/org/apache/http/HttpEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="144" column="16" selection-start-line="144" selection-start-column="16" selection-end-line="144" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/ChattyApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/javafx-src.zip!/javafx/event/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-162">
-          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/javafx-src.zip!/javafx/event/ActionEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="34" column="35" lean-forward="true" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6-sources.jar!/org/apache/http/impl/client/CloseableHttpClient.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10-sources.jar!/org/apache/http/HttpResponse.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6-sources.jar!/org/apache/http/client/methods/CloseableHttpResponse.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10-sources.jar!/org/apache/http/HttpEntity.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/javafx-src.zip!/javafx/event/Event.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/javafx-src.zip!/javafx/event/ActionEvent.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/RegisterView.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -956,9 +913,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -966,33 +920,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6-sources.jar!/org/apache/http/client/entity/UrlEncodedFormEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="54" column="11" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1626">
-          <caret line="554" column="19" selection-start-line="554" selection-start-column="19" selection-end-line="554" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/javafx-src.zip!/javafx/beans/property/FloatProperty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="216" column="32" selection-start-line="216" selection-start-column="32" selection-end-line="216" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6-sources.jar!/org/apache/http/client/entity/UrlEncodedFormEntity.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/Object.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/javafx-src.zip!/javafx/beans/property/FloatProperty.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/controller/RegisterController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-234">
@@ -1007,47 +940,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/model/OutputMessage.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/de/roskenet/springboot-javafx-support/1.3.15/springboot-javafx-support-1.3.15-sources.jar!/de/felixroske/jfxsupport/FXMLController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/model/UserView.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-websocket/5.0.10.RELEASE/spring-websocket-5.0.10.RELEASE.jar!/org/springframework/web/socket/client/standard/StandardWebSocketClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="41" column="36" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/view/LoginView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/de/roskenet/springboot-javafx-support/1.3.15/springboot-javafx-support-1.3.15-sources.jar!/de/felixroske/jfxsupport/AbstractJavaFxApplicationSupport.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/MainChatView.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="108" selection-start-line="8" selection-start-column="108" selection-end-line="8" selection-end-column="108" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/util/HTTPRequestExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="78" column="6" selection-start-line="78" selection-start-column="6" selection-end-line="78" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/model/OutputMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/model/OutputMessageView.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/model/MessageView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/de/roskenet/springboot-javafx-support/1.3.15/springboot-javafx-support-1.3.15-sources.jar!/de/felixroske/jfxsupport/FXMLController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/model/UserView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+        <state relative-caret-position="340">
+          <caret line="36" column="43" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -1058,69 +980,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-websocket/5.0.10.RELEASE/spring-websocket-5.0.10.RELEASE.jar!/org/springframework/web/socket/client/standard/StandardWebSocketClient.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="41" column="36" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="36" />
-          <folding>
-            <element signature="e#2044#2045#0" expanded="true" />
-            <element signature="e#2127#2128#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/view/LoginView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="47" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="47" />
+        <state relative-caret-position="217">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/model/MessageRecipient.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/ChattyApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="136">
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <folding>
+            <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#405#406#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/de/roskenet/springboot-javafx-support/1.3.15/springboot-javafx-support-1.3.15-sources.jar!/de/felixroske/jfxsupport/AbstractJavaFxApplicationSupport.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1533">
-          <caret line="112" column="23" selection-start-line="112" selection-start-column="23" selection-end-line="112" selection-end-column="23" />
+        <state relative-caret-position="404">
+          <caret line="88" column="21" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/controller/UserSession.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="28" />
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#270#271#0" expanded="true" />
             <element signature="e#318#319#0" expanded="true" />
-            <element signature="e#367#368#0" expanded="true" />
             <element signature="e#402#403#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/controller/socket/SockJsJavaClient.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/model/MessageRecipient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="148" column="1" lean-forward="true" selection-start-line="148" selection-start-column="1" selection-end-line="148" selection-end-column="1" />
+        <state relative-caret-position="221">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/control/TextField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#3264#3265#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/control/TextInputControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="347" column="35" selection-start-line="347" selection-start-column="35" selection-end-line="347" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/5.0.10.RELEASE/spring-messaging-5.0.10.RELEASE.jar!/org/springframework/messaging/simp/stomp/DefaultStompSession.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="135" selection-start-line="135" selection-end-line="135" />
         </state>
       </provider>
     </entry>
@@ -1134,10 +1062,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/controller/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/model/MessageView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/model/OutputMessageView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/5.0.10.RELEASE/spring-messaging-5.0.10.RELEASE.jar!/org/springframework/messaging/simp/stomp/StompHeaders.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="34" column="35" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="35" />
+          <folding>
+            <element signature="e#2009#2010#0" expanded="true" />
+            <element signature="e#2064#2065#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/controller/socket/SockJsJavaClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1146,23 +1102,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chatty/controller/MainChatController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+        <state relative-caret-position="302">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#342#343#0" expanded="true" />
-            <element signature="e#393#394#0" expanded="true" />
+            <element signature="e#1522#1523#0" expanded="true" />
+            <element signature="e#1580#1581#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/MainChatView.fxml">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="108" selection-start-line="8" selection-start-column="108" selection-end-line="8" selection-end-column="108" />
+        <state relative-caret-position="635">
+          <caret line="1774" column="56" lean-forward="true" selection-start-line="1774" selection-start-column="56" selection-end-line="1774" selection-end-column="56" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
   </component>
   <component name="masterDetails">
@@ -1205,7 +1160,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>10</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1222,7 +1177,6 @@
             <option name="proportions">
               <list>
                 <option value="0.18620689" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

@@ -1,9 +1,9 @@
 package com.chatty.model;
 
 import lombok.*;
+import org.joda.time.LocalDate;
 import org.springframework.stereotype.Component;
 
-import java.time.LocalDate;
 import java.util.List;
 
 @Component
