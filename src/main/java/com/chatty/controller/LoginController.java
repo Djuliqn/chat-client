@@ -35,6 +35,9 @@ public class LoginController {
 
     @Autowired
     private UserSession userSession;
+    
+    @Autowired
+    private MainChatController mainChatController;
 
     @FXML
     private Button login;
@@ -68,16 +71,13 @@ public class LoginController {
         });
     }
 
-    private void init() {
-        sockJsJavaClient.connectClient();
-        sockJsJavaClient.subscribeClient();
-    }
-
     private void showMainView() {
         Stage stage = AbstractJavaFxApplicationSupport.getStage();
         stage.setWidth(chatViewWidth);
         stage.setHeight(chatViewHeight);
-        init();
+        
+        mainChatController.init();
+        
         userSession.setLoggedInUser(MessageRecipient.builder().recipientName(username.getText()).recipientType(MessageRecipient.RecipientType.USER).build());
         AbstractJavaFxApplicationSupport.showView(MainChatView.class);
     }
