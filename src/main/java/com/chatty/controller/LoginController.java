@@ -1,7 +1,6 @@
 package com.chatty.controller;
 
 import com.chatty.controller.socket.SockJsJavaClient;
-import com.chatty.model.MessageRecipient;
 import com.chatty.util.HTTPRequestExecutor;
 import com.chatty.util.HTTPResponseMessageExtractor;
 import com.chatty.view.MainChatView;
@@ -29,9 +28,6 @@ public class LoginController {
 
     @Value("${window.chat.height}")
     private Integer chatViewHeight;
-
-    @Autowired
-    private SockJsJavaClient sockJsJavaClient;
 
     @Autowired
     private UserSession userSession;
@@ -78,7 +74,7 @@ public class LoginController {
         
         mainChatController.init();
         
-        userSession.setLoggedInUser(MessageRecipient.builder().recipientName(username.getText()).recipientType(MessageRecipient.RecipientType.USER).build());
+        userSession.setLoggedInUser(username.getText());
         AbstractJavaFxApplicationSupport.showView(MainChatView.class);
     }
 

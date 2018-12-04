@@ -4,8 +4,6 @@ import lombok.*;
 import org.joda.time.LocalDate;
 import org.springframework.stereotype.Component;
 
-import java.util.List;
-
 @Component
 @Builder(toBuilder = true)
 @NoArgsConstructor(access = AccessLevel.PACKAGE)
@@ -17,7 +15,7 @@ public class MessageView {
 
     private String username;
     
-    private List<MessageRecipient> recipients;
+    private String recipients;
 
     private String text;
 

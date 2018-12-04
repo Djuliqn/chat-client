@@ -1,18 +1,17 @@
 package com.chatty.controller;
 
-import com.chatty.model.MessageRecipient;
 import org.springframework.stereotype.Component;
 
 @Component
 public class UserSession {
 
-    private MessageRecipient loggedInUser;
+    private String loggedInUser;
 
-    public void setLoggedInUser(MessageRecipient loggedInUser) {
+    public void setLoggedInUser(String loggedInUser) {
         this.loggedInUser = loggedInUser;
     }
 
-    public MessageRecipient getLoggedInUser() {
+    public String getLoggedInUser() {
         return loggedInUser;
     }
 }
