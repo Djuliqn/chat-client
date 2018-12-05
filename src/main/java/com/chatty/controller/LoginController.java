@@ -23,6 +23,9 @@ import java.util.Map;
 @FXMLController
 public class LoginController {
 
+    @Value("${server.host}")
+    private String host;
+
     @Value("${window.chat.width}")
     private Integer chatViewWidth;
 
@@ -50,7 +53,7 @@ public class LoginController {
     private void loginBtnClicked() {
         login.setOnMouseClicked(event -> {
             message.setText("");
-            HTTPRequestExecutor reqExecutor = new HTTPRequestExecutor("localhost", "8080");
+            HTTPRequestExecutor reqExecutor = new HTTPRequestExecutor(host, "80");
 
             // Request parameters and other properties.
             Map<String,String> params = new HashMap<>(2);

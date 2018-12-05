@@ -13,6 +13,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import org.apache.http.client.methods.CloseableHttpResponse;
+import org.springframework.beans.factory.annotation.Value;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -21,6 +22,9 @@ import java.util.Map;
 
 @FXMLController
 public class RegisterController {
+
+    @Value("${server.host}")
+    private String host;
 
     public static final int FIELD_MIN_LENGHT = 4;
 
@@ -53,7 +57,7 @@ public class RegisterController {
                 return;
             }
             Map<String, String> data = getParameterMap(Arrays.asList(username, password, confirmPassword));
-            HTTPRequestExecutor reqExecutor = new HTTPRequestExecutor("localhost", "8080");
+            HTTPRequestExecutor reqExecutor = new HTTPRequestExecutor(host, "80");
             CloseableHttpResponse entity = reqExecutor.executeJSONPost("/api/user/register", data);
 
             if(entity.getStatusLine().getStatusCode() != 200){
