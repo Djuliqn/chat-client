@@ -176,11 +176,19 @@ public class MainChatController {
     private String getChatName(String sender, List<String> chatMembers) {
     	
     	StringBuilder chatNameBuilder = new StringBuilder();
-	chatNameBuilder.append(sender);
-
+	boolean firstElementFlag = false;
+	if (!sender.equals("")) {
+		chatNameBuilder.append(sender);
+	} else {
+		firstElementFlag = true;
+	}
+	
 	for (String chatMember : chatMembers) {
-			
-		chatNameBuilder.append(", ");
+		if (!firstElementFlag) {	
+			chatNameBuilder.append(", ");
+		} else {
+			firstElementFlag = false;
+		}
 		chatNameBuilder.append(chatMember);
 	}
 
