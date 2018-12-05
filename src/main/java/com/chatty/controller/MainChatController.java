@@ -103,7 +103,7 @@ public class MainChatController {
     	chatMembers = chatMembers.stream().distinct().collect(Collectors.toList());
 
     	// Overwrite in case this is a main chat message. 
-    	final String chatName = recipients.equals("Main Chat") ? recipients : getChatName(sender, chatMembers);
+    	final String chatName = recipients.equals("Main Chat") ? recipients : getChatName("", chatMembers);
     	
     	Optional<ActiveChat> selectedChatOptional = activeChats.stream().filter( c -> c.getName().equals(chatName)).findFirst();
     	
@@ -176,26 +176,15 @@ public class MainChatController {
     private String getChatName(String sender, List<String> chatMembers) {
     	
     	StringBuilder chatNameBuilder = new StringBuilder();
-		boolean firstElementFlag = false;
-		if (!sender.equals(userSession.getLoggedInUser())) {
-			chatNameBuilder.append(sender);
-		}
-		else {
-			firstElementFlag = true;
-		}
-		for (String chatMember : chatMembers) {
-			if (!chatMember.equals(userSession.getLoggedInUser())) {
-				if (firstElementFlag) {
-					firstElementFlag = false;
-				}
-				else {
-					chatNameBuilder.append(", ");
-				}
-				chatNameBuilder.append(chatMember);
-			}
-		}
-		
-		return chatNameBuilder.toString();
+	chatNameBuilder.append(sender);
+
+	for (String chatMember : chatMembers) {
+			
+		chatNameBuilder.append(", ");
+		chatNameBuilder.append(chatMember);
+	}
+
+	return chatNameBuilder.toString();
     }
     
     private void changeActiveChat() {
